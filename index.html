@@ -17,6 +17,8 @@
             color: white;
             padding: 1rem 2rem;
             text-align: center;
+            font-family: Brush Script MT;
+            font-size: 25px;
         }
 
         nav {
@@ -24,6 +26,7 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
+            font-family: Garamond;
         }
 
         nav a {
@@ -49,16 +52,22 @@
             border-radius: 8px;
             margin-bottom: 2rem;
             padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 1px #4d243d;
         }
 
         .recipe h2 {
             color: #333;
+            text-align: center;
+            font-family: Courier New;
         }
 
         .recipe img {
-            width: 50%;
             border-radius: 8px;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 5px 5px 1px #4d243d;
         }
 
         .recipe ul {
@@ -71,6 +80,7 @@
             margin: 0.5rem 0;
             padding: 0.5rem;
             border-radius: 4px;
+            box-shadow: 5px 5px 1px #4d243d;
         }
 
         footer {
@@ -79,6 +89,11 @@
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+        }
+
+        .recipe h1 {
+          text-align: center;
+          font-family: Courier New;
         }
     </style>
 </head>
@@ -196,6 +211,13 @@
     <footer>
         <p>&copy; 2024 Filipinos'talgia. All Rights Reserved.</p>
         <a href="https://docs.google.com/document/d/1IAaKvzb9zY4bR3OHL1iU18QHMvZkVvdMSn-EJ3FDhcA/edit?tab=t.0"><p>References</p></a>
+
+    <label for="reason">Want to suggest a recipe?</label><br>
+    <textarea rows="5" cols="50" placeholder="Input your recipe here!"></textarea>
+    <br>
+    <br>
+    <input type="submit" id="submit" name="submit" value="submit form">
+    <input type="reset" id="reset" name="reset" value="clear all">
     </footer>
 </body>
 </html>
